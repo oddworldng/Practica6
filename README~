@@ -1,0 +1,14 @@
+####################################################
+#                                    ETSII - ULL   #
+#                                                  #
+#        Práctica de Laboratorio #5                #
+#      Autor: Andrés Nacimiento García             #
+#                                                  #
+#                           17 de Octubre de 2012  #
+####################################################
+
+PARA EJECUTAR LAS PRUEBAS:
+Comando: rake test (en el directorio raíz)
+
+EJECUTAR PRINCIPAL: 
+Comando: ruby -Ilib bin/play.rb (en el directorio raíz)
