@@ -12,3 +12,4 @@ Comando: rake test (en el directorio raíz)
 
 EJECUTAR PRINCIPAL: 
 Comando: ruby -Ilib bin/play.rb (en el directorio raíz)
+rspect -Ilib -Itest spec/prueba_spec.rb
