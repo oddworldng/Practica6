@@ -1,6 +1,6 @@
 task :default => :rspec #Rake por defecto
 
-desc "Run tests with --format documentation"
+desc "(default) Run tests with --format documentation"
 task :rspec do
 	sh "rspec -Ilib spec/ppt_spec.rb --format documentation"
 end

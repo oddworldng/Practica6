@@ -14,7 +14,7 @@ PARA EJECUTAR LAS PRUEBAS:
 Comando: rake -T (en el directorio raíz) - Muestra la descripción de las tareas
 	
 	rake bin    # Run bin/ppt_main.rb
-	rake rspec  # Run tests with --format documentation
+	rake rspec  # (default) Run tests with --format documentation
 	rake test   # Run tests with --format documentation
 	rake thtml  # Run tests with format: html
 
