@@ -39,7 +39,7 @@ describe PiedraPapelTijeras do
 		@ppt_obj.unico_juego.should == [:tijeras]
 	end
 	
-	it "Se debe invocar al metodo jugar() para determinar el ganador de la tirada\n" do # Revisar..
+	it "Se debe invocar al metodo jugar() para determinar el ganador de la tirada\n" do
 		@ppt_obj.jugar.should == @ppt_obj.jugadores[-2]	
 	end
 

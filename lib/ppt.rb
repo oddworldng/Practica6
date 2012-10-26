@@ -48,8 +48,6 @@ class PiedraPapelTijeras
 		[:computer, :humano]
 	end
 
-	
-
 	def comprobar_todas_tiradas_maquina
 
 		cont_piedra = 0
