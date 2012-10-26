@@ -67,7 +67,6 @@ class PiedraPapelTijeras
 			elsif tiradacomputer == :papel 
 				cont_papel += 1
 			elsif tiradacomputer == :tijeras
-
 				cont_tijeras += 1
 			end
 
