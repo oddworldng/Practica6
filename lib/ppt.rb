@@ -40,13 +40,19 @@ class PiedraPapelTijeras
 		@@unico
 	end
 
-	def jugar 
-		jugadores[rand(jugadores.size)]
-	end
-
 	def jugadores
 		[:computer, :humano]
 	end
+
+	def jugar
+		if ((humano == :piedra && computer == :tijeras) || (humano == :papel && computer == :piedra) || (humano == :tijeras && computer == :papel))
+			return jugadores[-1] #humano
+		else
+			return jugadores[-2] #computer
+		end
+	end
+
+	#jugadores[rand(jugadores.size)]
 
 	def comprobar_todas_tiradas_maquina
 

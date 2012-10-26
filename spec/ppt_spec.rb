@@ -40,7 +40,7 @@ describe PiedraPapelTijeras do
 	end
 	
 	it "Se debe invocar al metodo jugar() para determinar el ganador de la tirada\n" do
-		@ppt_obj.jugar.should == @ppt_obj.jugadores[-2]	
+		@ppt_obj.jugar.should == @ppt_obj.jugadores[-2]
 	end
 
 	it "Se debe de comprobar que las tiradas de la maquina al ser aleatorias recorren las tres posibilidades\n" do

@@ -2,7 +2,7 @@ task :default => :rspec #Rake por defecto
 
 desc "Run tests with --format documentation"
 task :rspec do
-	sh "rspec -Ilib -Itest spec/rpc_spec.rb --format documentation"
+	sh "rspec -Ilib spec/ppt_spec.rb --format documentation"
 end
 
 desc "Run bin/ppt_main.rb"
@@ -13,10 +13,10 @@ end
 
 desc "Run tests with --format documentation"
 task :test do
-	sh "rspec -Ilib -Itest spec/rpc_spec.rb --format documentation"
+	sh "rspec -Ilib spec/ppt_spec.rb --format documentation"
 end
 
 desc "Run tests with format: html"
 task :thtml do
-	sh "rspec -Ilib -Itest spec/rpc_spec.rb --format html"
+	sh "rspec -Ilib spec/ppt_spec.rb --format html"
 end

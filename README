@@ -11,4 +11,10 @@ PARA EJECUTAR LAS PRUEBAS RSPECT:
 Comando: rspec -Ilib spec/ppt_spec.rb (en el directorio raiz)
 
 PARA EJECUTAR LAS PRUEBAS:
-Comando: rake test (en el directorio raíz)
+Comando: rake -T (en el directorio raíz) - Muestra la descripción de las tareas
+	
+	rake bin    # Run bin/ppt_main.rb
+	rake rspec  # Run tests with --format documentation
+	rake test   # Run tests with --format documentation
+	rake thtml  # Run tests with format: html
+
