@@ -1,14 +1,14 @@
 #!/usr/bin/ruby
 
 class PiedraPapelTijeras
-	
+
 	def humano
 		:piedra
 	end
 
-	def computer
-		lista_resultados = [:piedra, :papel, :tijeras, :piedra, :piedra, :tijeras, :piedra]
-		unico_juego = [:tijeras]
+	def computer		
+		@@lista = [:piedra, :papel, :tijeras, :piedra, :piedra, :tijeras, :piedra]
+		@@unico = [:tijeras]
 		:papel
 	end
 
@@ -32,9 +32,23 @@ class PiedraPapelTijeras
 		end
 	end
 
-	def jugar 
-		computer
+	def lista_resultados	
+		@@lista
 	end
+
+	def unico_juego
+		@@unico
+	end
+
+	def jugar 
+		jugadores[rand(jugadores.size)]
+	end
+
+	def jugadores
+		[:computer, :humano]
+	end
+
+	
 
 	def comprobar_todas_tiradas_maquina
 

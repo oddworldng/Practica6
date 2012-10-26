@@ -31,18 +31,16 @@ describe PiedraPapelTijeras do
 		@ppt_obj.obtener_maquina.should == @ppt_obj.computer
 	end
 
-	it "Debe existir una lista de resultados de un juego desde el punto de vista de la maquina\n" do # Revisar..
-		#@ppt_obj.computer.lista_resultados.should == [:piedra, :papel, :tijeras, :piedra, :piedra, :tijeras, :piedra]
-		#puts @ppt_obj.lista_resultados
+	it "Debe existir una lista de resultados de un juego desde el punto de vista de la maquina\n" do
+		@ppt_obj.lista_resultados.should == [:piedra, :papel, :tijeras, :piedra, :piedra, :tijeras, :piedra]
 	end
 
-	it "Debe existir un resultado para un juego, desde el punto de vista de la maquina\n" do # Revisar..
-		#@ppt_obj.computer.unico_juego.should == [:tijeras]
+	it "Debe existir un resultado para un juego, desde el punto de vista de la maquina\n" do
+		@ppt_obj.unico_juego.should == [:tijeras]
 	end
 	
 	it "Se debe invocar al metodo jugar() para determinar el ganador de la tirada\n" do # Revisar..
-		@ppt_obj.jugar.should == @ppt_obj.computer
-		
+		@ppt_obj.jugar.should == @ppt_obj.jugadores[-2]	
 	end
 
 	it "Se debe de comprobar que las tiradas de la maquina al ser aleatorias recorren las tres posibilidades\n" do
